@@ -3,6 +3,9 @@
     margin: 0;
     font-family: sans-serif;
 }
+::selection{
+    background-color: #610abe;
+}
 body{
     background-color:  rgb(15,23,42);
     height: 295vh;
@@ -24,11 +27,17 @@ body{
     border-radius: 50%;
     margin-bottom: 20px;
     border: solid 10px #610abe;
+    box-shadow: 0 0 70px #5100ff;
+    transition: .5s;
+}
+.profile img:hover{
+    box-shadow: 0 0 150px #5100ff;
 }
 .name{
     font-size: 40px;
     color: #fff;
     padding: 3px;
+    margin-top: 25px;
     letter-spacing: 2px;
     background-image: linear-gradient(to right bottom, #690adc,#0793da);
     border-radius: 8px;
@@ -37,6 +46,21 @@ body{
 }
 .name:hover{
     font-size: 50px;
+}
+.about-me{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.new-s{
+    margin-top: 500px;
 }
 .pr{
     font-size: 25px;
@@ -51,6 +75,9 @@ body{
 }
 .pr:hover{
     font-size: 30px;
+}
+span{
+    color: #4094f5;
 }
 .skills{
     position: relative;
@@ -69,7 +96,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right bottom, #680adc4a,#0794da4f);
-    border-radius: 8px;
+    border-radius: 12px;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
@@ -123,9 +150,110 @@ body{
     margin-top: 200px;
 }
 .projects img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
     margin-top: 30px;
     border: 4px solid #8f17ffc3;
+    transition: .5s;
+}
+.projects img:hover{
+    width: 320px;
+    height: 320px;
+}
+.projects .dcp{
+    background-color: #9935f687;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+}
+.projects .dcp .dcp-name,.projects .dcp .dcp-name2{
+    width: 300px;
+    color: #fff;
+}
+.projects .dcp .dcp-name{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.projects .dcp .dcp-name2{
+    font-size: 20px;
+}
+
+.work{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work p{
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.ic{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ic i{
+    color: #fff;
+    font-size: 35px;
+    background-color: #494c4dcd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: .5s;
+}
+.ic i:hover{
+    font-size: 40px;
+}
+#tiktok{
+    font-size: 45px;
+}
+#tiktok:hover{
+    font-size: 50px;
+}
+@media (min-width:768px) {
+    .projects img{
+    width: 400px;
+    height: 400px;
+}
+.projects img:hover{
+    width: 420px;
+    height: 420px;
+}
+.projects .dcp .dcp-name,.projects .dcp .dcp-name2{
+    width: 400px;
+    color: #fff;
+}
+.projects .dcp .dcp-name{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.projects .dcp .dcp-name2{
+    font-size: 25px;
+}
+.ic i{
+    color: #fff;
+    font-size: 55px;
+    background-color: #494c4dcd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: .5s;
+}
+.ic i:hover{
+    font-size: 60px;
+}
+#tiktok{
+    font-size: 65px;
+}
+#tiktok:hover{
+    font-size: 70px;
+}
 }
