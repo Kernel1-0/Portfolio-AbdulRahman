@@ -148,33 +148,41 @@ span{
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
+    gap: 30px;
 }
 .projects img{
     width: 300px;
     height: 300px;
-    border-radius: 15px;
-    margin-top: 30px;
-    border: 4px solid #8f17ffc3;
+    border-radius: 10px;
     transition: .5s;
 }
 .projects img:hover{
     width: 320px;
     height: 320px;
 }
-.projects .dcp{
-    background-color: #9935f687;
+.projects .dcp,.projects .dcp-soon{
+    background-image: linear-gradient(to right bottom , #680adc80,#0794da81);
     border-radius: 8px;
+    padding-bottom: 20px;
+}
+.projects .dcp-soon{
+    padding-bottom: 50px;
 }
 a{
     text-decoration: none;
 }
-.projects .dcp .dcp-name,.projects .dcp .dcp-name2{
-    width: 300px;
+.projects .dcp .dcp-name,.projects .dcp .dcp-name2,.projects .dcp-soon .dcp-name{
+    width: 292px;
     color: #fff;
+    margin-left: 8px;
 }
-.projects .dcp .dcp-name{
+.projects .dcp .dcp-name,.projects .dcp-soon .dcp-name{
     font-size: 30px;
     text-transform: uppercase;
+}
+.projects .dcp-soon .dcp-name{
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 .projects .dcp .dcp-name2{
     font-size: 20px;
@@ -221,12 +229,12 @@ a{
 }
 @media (min-width:768px) {
     .projects img{
-    width: 400px;
-    height: 400px;
+    width: 410px;
+    height: 410px;
 }
 .projects img:hover{
-    width: 420px;
-    height: 420px;
+    width: 430px;
+    height: 430px;
 }
 .projects .dcp .dcp-name,.projects .dcp .dcp-name2{
     width: 400px;
